@@ -253,6 +253,9 @@ init_mathjax();
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
+                         <li><a href="../pages/2016fall-cheng-shi-lian-xi-ti-123456789/">
+                             2016Fall 程式練習題-123456789
+                          </a></li>
                          <li><a href="../pages/w14lian-xi/">
                              W14練習
                           </a></li>
@@ -293,8 +296,35 @@ init_mathjax();
             <hr/>
             <article>
                 <h2><a href="../w16.html">W16</a></h2>
-                <div class="summary"><p>w16</p>
+                <div class="summary"><!-- 導入 Brython 標準程式庫 -->
 
+<script type="text/javascript" 
+    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js">
+</script>
+
+<!-- 啟動 Brython -->
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<!-- 以下實際利用  Brython 畫圖 -->
+
+<script type="text/python3">
+from browser import alert
+import random
+
+ans = random.randint(1, 100)
+
+a_in = int(input("輸入整數:"))
+guess = 1
+
+while ans != a_in:
+    if a_in < ans:
+        a_in = int(input("too small"))
+    else ...</script></!--></!--></!-->
                     <a class="btn btn-default btn-xs" href="../w16.html">more ...</a>
                 </div>
             </article>

@@ -252,6 +252,9 @@ init_mathjax();
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
+                         <li><a href="../pages/2016fall-cheng-shi-lian-xi-ti-123456789/">
+                             2016Fall 程式練習題-123456789
+                          </a></li>
                          <li><a href="../pages/w14lian-xi/">
                              W14練習
                           </a></li>
@@ -284,6 +287,105 @@ init_mathjax();
         <div class="col-sm-9">
 
             <article>
+                <h2><a href="../2016fallcp_hwqi-mo-kao-zhou.html">2016fallcp_hw期末考週</a></h2>
+                <div class="summary">
+                    <a class="btn btn-default btn-xs" href="../2016fallcp_hwqi-mo-kao-zhou.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="../w16.html">W16</a></h2>
+                <div class="summary"><!-- 導入 Brython 標準程式庫 -->
+
+<script type="text/javascript" 
+    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js">
+</script>
+
+<!-- 啟動 Brython -->
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<!-- 以下實際利用  Brython 畫圖 -->
+
+<script type="text/python3">
+from browser import alert
+import random
+
+ans = random.randint(1, 100)
+
+a_in = int(input("輸入整數:"))
+guess = 1
+
+while ans != a_in:
+    if a_in < ans:
+        a_in = int(input("too small"))
+    else ...</script></!--></!--></!-->
+                    <a class="btn btn-default btn-xs" href="../w16.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="../w16-1-lian-xi.html">W16-1 練習</a></h2>
+                <div class="summary"><!-- 導入 Brython 標準程式庫 -->
+
+<script type="text/javascript" 
+    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js">
+</script>
+
+<!-- 啟動 Brython -->
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<!-- 以下實際利用  Brython 畫圖 -->
+
+<p><button id="b1">Click Here</button></p>
+
+<script type="text/python3">
+from browser import alert
+import random
+
+ans = random.randint(1, 100)
+
+a_in = int(input("輸入整數:"))
+guess = 1
+
+while ans != a_in:
+    if a_in < ans:
+        a_in = int(input("too ...</script></!--></!--></!-->
+                    <a class="btn btn-default btn-xs" href="../w16-1-lian-xi.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="../w15-lian-xi.html">W15 練習</a></h2>
+                <div class="summary"><p>cpa_w14-1 教學影片重點:</p>
+<p>leo 檔案 settings 節點用法</p>
+<p>ctrl + u (upper) 功效? 還有那些相關快捷鍵?</p>
+<p>如何讓 settings 節點生效?</p>
+<p>@edit 節點指令用法</p>
+<p>@button 節點指令用法</p>
+<p>pelican 是甚麼? 與 Markdown 檔案關係?</p>
+<p>為何需要 @button https_server?</p>
+<p>啟動 https_server 為何需要 localhost.crt 與 localhost.key?</p>
+<p>pelican 的 plugin 有何功能?</p>
+<p>至今我們用了那些 pelican 的 plugin?</p>
+<p>pelican 轉檔如何偵錯?</p>
+<p>如何複製或者搬動 leo 的節點?</p>
+<p>何謂網誌? Weblog?</p>
+<p>input ...</p>
+                    <a class="btn btn-default btn-xs" href="../w15-lian-xi.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="../w11-brython-hui-tu.html">W11 Brython 繪圖</a></h2>
                 <div class="summary">
                     <a class="btn btn-default btn-xs" href="../w11-brython-hui-tu.html">more ...</a>
@@ -308,13 +410,28 @@ init_mathjax();
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
                 <ul class="list-group" id="recentposts">
                     <li class="list-group-item">
-                        <a href="../w11-brython-hui-tu.html">
-                            W11 Brython 繪圖
+                        <a href="../2016fallcp_hwqi-mo-kao-zhou.html">
+                            2016fallcp_hw期末考週
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="../w10-brython-hui-tu.html">
-                            W10 Brython 繪圖
+                        <a href="../w16.html">
+                            W16
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="../w16-1-lian-xi.html">
+                            W16-1 練習
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="../w15-lian-xi.html">
+                            W15 練習
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="../w11-brython-hui-tu.html">
+                            W11 Brython 繪圖
                         </a>
                     </li>
                 </ul>
@@ -373,7 +490,7 @@ init_mathjax();
    <div class="container">
       <hr>
       <div class="row">
-         <div class="col-xs-10">&copy; 2016 KMOL
+         <div class="col-xs-10">&copy; 2017 KMOL
             &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
             <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
             <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>

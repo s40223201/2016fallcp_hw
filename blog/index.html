@@ -252,6 +252,9 @@ init_mathjax();
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
+                         <li><a href="./pages/2016fall-cheng-shi-lian-xi-ti-123456789/">
+                             2016Fall 程式練習題-123456789
+                          </a></li>
                          <li><a href="./pages/w14lian-xi/">
                              W14練習
                           </a></li>
@@ -292,9 +295,93 @@ init_mathjax();
             <hr/>
             <article>
                 <h2><a href="./w16.html">W16</a></h2>
-                <div class="summary"><p>w16</p>
+                <div class="summary"><!-- 導入 Brython 標準程式庫 -->
 
+<script type="text/javascript" 
+    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js">
+</script>
+
+<!-- 啟動 Brython -->
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<!-- 以下實際利用  Brython 畫圖 -->
+
+<script type="text/python3">
+from browser import alert
+import random
+
+ans = random.randint(1, 100)
+
+a_in = int(input("輸入整數:"))
+guess = 1
+
+while ans != a_in:
+    if a_in < ans:
+        a_in = int(input("too small"))
+    else ...</script></!--></!--></!-->
                     <a class="btn btn-default btn-xs" href="./w16.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="./w16-1-lian-xi.html">W16-1 練習</a></h2>
+                <div class="summary"><!-- 導入 Brython 標準程式庫 -->
+
+<script type="text/javascript" 
+    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js">
+</script>
+
+<!-- 啟動 Brython -->
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<!-- 以下實際利用  Brython 畫圖 -->
+
+<p><button id="b1">Click Here</button></p>
+
+<script type="text/python3">
+from browser import alert
+import random
+
+ans = random.randint(1, 100)
+
+a_in = int(input("輸入整數:"))
+guess = 1
+
+while ans != a_in:
+    if a_in < ans:
+        a_in = int(input("too ...</script></!--></!--></!-->
+                    <a class="btn btn-default btn-xs" href="./w16-1-lian-xi.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="./w15-lian-xi.html">W15 練習</a></h2>
+                <div class="summary"><p>cpa_w14-1 教學影片重點:</p>
+<p>leo 檔案 settings 節點用法</p>
+<p>ctrl + u (upper) 功效? 還有那些相關快捷鍵?</p>
+<p>如何讓 settings 節點生效?</p>
+<p>@edit 節點指令用法</p>
+<p>@button 節點指令用法</p>
+<p>pelican 是甚麼? 與 Markdown 檔案關係?</p>
+<p>為何需要 @button https_server?</p>
+<p>啟動 https_server 為何需要 localhost.crt 與 localhost.key?</p>
+<p>pelican 的 plugin 有何功能?</p>
+<p>至今我們用了那些 pelican 的 plugin?</p>
+<p>pelican 轉檔如何偵錯?</p>
+<p>如何複製或者搬動 leo 的節點?</p>
+<p>何謂網誌? Weblog?</p>
+<p>input ...</p>
+                    <a class="btn btn-default btn-xs" href="./w15-lian-xi.html">more ...</a>
                 </div>
             </article>
             <hr/>
@@ -346,23 +433,16 @@ Author: 40223201</p>
                 </div>
             </article>
             <hr/>
-            <article>
-                <h2><a href="./2016fall-cheng-shi-lian-xi-ti.html">2016Fall 程式練習題</a></h2>
-                <div class="summary"><p>已知截至第六週 2016fallcpa 的分組資料位於倉儲中的 <a href="./../w6_group.txt">w6_group.txt</a>, 而從學校修課系統下載的修課人員名條則為 <a href="./../w6_list.txt">w6_list.txt</a>, 請各組著手練習, 找出尚未納入分組的人員名單, 並研擬如何處置上課一個半月卻尚未進入情況的學員?</p>
 
-                    <a class="btn btn-default btn-xs" href="./2016fall-cheng-shi-lian-xi-ti.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./2016fall-ji-jie-she-ji-zhu-ti-jiao-xue.html">2016Fall 機械設計主題教學</a></h2>
-                <div class="summary"><p>知識管理與最佳化應用實驗室試圖利用計算機程式、網際內容管理、電腦輔助設計實習與協同產品設計實習等課程, 進行與機械設計相關的主題式教學, 其中包含強化創造力的教學、令學員熟習六種工程表達方式, 並且俱備融入協同設計所需要的四大面向知識與技能.</p>
-
-                    <a class="btn btn-default btn-xs" href="./2016fall-ji-jie-she-ji-zhu-ti-jiao-xue.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-
+        <ul class="pagination">
+                <li class="prev disabled"><a href="#">&laquo;</a></li>
+                    <li class="active"><a
+                            href="./index.html">1</a></li>
+                    <li class=""><a
+                            href="./index2.html">2</a></li>
+                <li class="next"><a
+                        href="./index2.html">&raquo;</a></li>
+        </ul>
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>
@@ -383,18 +463,18 @@ Author: 40223201</p>
                         </a>
                     </li>
                     <li class="list-group-item">
+                        <a href="./w16-1-lian-xi.html">
+                            W16-1 練習
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="./w15-lian-xi.html">
+                            W15 練習
+                        </a>
+                    </li>
+                    <li class="list-group-item">
                         <a href="./w14-lian-xi.html">
                             W14 練習
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="./w12-brython-hui-tu.html">
-                            W12 Brython 繪圖
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="./w11-brython-hui-tu.html">
-                            W11 Brython 繪圖
                         </a>
                     </li>
                 </ul>
