@@ -288,7 +288,7 @@ init_mathjax();
         <div class="col-sm-9">
 
             <article>
-                <h2><a href="../w16-1-lian-xi.html">W16-1 練習</a></h2>
+                <h2><a href="../w15-lian-xi.html">W15 練習</a></h2>
                 <div class="summary"><!-- 導入 Brython 標準程式庫 -->
 
 <script type="text/javascript" 
@@ -303,43 +303,29 @@ brython(1);
 }
 </script>
 
+<p>W15 製作按鈕</p>
+
 <!-- 以下實際利用  Brython 畫圖 -->
 
-<p><button id="b1">Click Here</button></p>
-
 <script type="text/python3">
+from browser import document
 from browser import alert
-import random
 
-ans = random.randint(1, 100)
+def get_input(ev):
+    the_input = input("請輸入")
+    alert("輸入為:"+str(the_input))
 
-a_in = int(input("輸入整數:"))
-guess = 1
+document['ch01'].bind('click',get_input)
 
-while ans != a_in:
-    if a_in < ans:
-        a_in = int(input("too ...</script></!--></!--></!-->
-                    <a class="btn btn-default btn-xs" href="../w16-1-lian-xi.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="../w15-lian-xi.html">W15 練習</a></h2>
-                <div class="summary"><p>cpa_w14-1 教學影片重點:</p>
-<p>leo 檔案 settings 節點用法</p>
-<p>ctrl + u (upper) 功效? 還有那些相關快捷鍵?</p>
-<p>如何讓 settings 節點生效?</p>
-<p>@edit 節點指令用法</p>
-<p>@button 節點指令用法</p>
-<p>pelican 是甚麼? 與 Markdown 檔案關係?</p>
-<p>為何需要 @button https_server?</p>
-<p>啟動 https_server 為何需要 localhost.crt 與 localhost.key?</p>
-<p>pelican 的 plugin 有何功能?</p>
-<p>至今我們用了那些 pelican 的 plugin?</p>
-<p>pelican 轉檔如何偵錯?</p>
-<p>如何複製或者搬動 leo 的節點?</p>
-<p>何謂網誌? Weblog?</p>
-<p>input ...</p>
+</script>
+
+<p><button id="ch01">取輸入後, 列印出來</button></p>
+
+<pre class="brush: python">
+
+<!-- 以下實際利用  Brython 畫圖 -->
+<script type="text/python3">
+from browser ...</script></!--></pre></!--></!--></!-->
                     <a class="btn btn-default btn-xs" href="../w15-lian-xi.html">more ...</a>
                 </div>
             </article>
@@ -362,11 +348,6 @@ while ans != a_in:
 
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
                 <ul class="list-group" id="recentposts">
-                    <li class="list-group-item">
-                        <a href="../w16-1-lian-xi.html">
-                            W16-1 練習
-                        </a>
-                    </li>
                     <li class="list-group-item">
                         <a href="../w15-lian-xi.html">
                             W15 練習

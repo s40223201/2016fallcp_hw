@@ -170,13 +170,13 @@ init_mathjax();
 
         <meta name="author" content="40223201" />
         <meta name="keywords" content="Brython" />
-        <meta name="description" content="17週心得與程式範例: 16週心得與程式範例: 第１６週利用亂數模組產生標準答案 取得使用者所猜整數，使用try except是用來防止輸入非整數 根據使用者與標準答案比較大小，並且回應提示字串。 15週心得與程式範例: 14週心得與程式範例:" />
+        <meta name="description" content="18週心得與程式範例: 期末總整理，這學期學到許多，謝謝老師的教導，辛苦了。 17週心得與程式範例: 元旦連假 16週心得與程式範例: 第１６週利用亂數模組產生標準答案 取得使用者所猜整數，使用try except是用來防止輸入非整數 根據使用者與標準答案比較大小，並且回應提示字串。 W16 猜數字遊戲 from browser import document from browser import alert import random def two_input(ev): ans = random.randint(1, 100) a_in = int(input(&#34;輸入整數:&#34;)) guess = 1 while ans != a_in: if a_in" />
 
         <meta property="og:site_name" content="2016Fall CPA 課程網誌 (虎尾科大MDE)" />
         <meta property="og:type" content="article"/>
         <meta property="og:title" content="2016fallcp_hw期末考週"/>
         <meta property="og:url" content="./2016fallcp_hwqi-mo-kao-zhou.html"/>
-        <meta property="og:description" content="17週心得與程式範例: 16週心得與程式範例: 第１６週利用亂數模組產生標準答案 取得使用者所猜整數，使用try except是用來防止輸入非整數 根據使用者與標準答案比較大小，並且回應提示字串。 15週心得與程式範例: 14週心得與程式範例:"/>
+        <meta property="og:description" content="18週心得與程式範例: 期末總整理，這學期學到許多，謝謝老師的教導，辛苦了。 17週心得與程式範例: 元旦連假 16週心得與程式範例: 第１６週利用亂數模組產生標準答案 取得使用者所猜整數，使用try except是用來防止輸入非整數 根據使用者與標準答案比較大小，並且回應提示字串。 W16 猜數字遊戲 from browser import document from browser import alert import random def two_input(ev): ans = random.randint(1, 100) a_in = int(input(&#34;輸入整數:&#34;)) guess = 1 while ans != a_in: if a_in"/>
         <meta property="article:published_time" content="2017-01-09" />
             <meta property="article:section" content="Course" />
             <meta property="article:tag" content="Brython" />
@@ -321,13 +321,131 @@ init_mathjax();
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <p><L1>17週心得與程式範例:</p>
+                <p><L1>18週心得與程式範例:</p>
+<p>期末總整理，這學期學到許多，謝謝老師的教導，辛苦了。</p>
+<p><L1>17週心得與程式範例:</p>
+<p>元旦連假</p>
 <p><L1>16週心得與程式範例:</p>
 <p>第１６週利用亂數模組產生標準答案</p>
 <p>取得使用者所猜整數，使用try except是用來防止輸入非整數</p>
 <p>根據使用者與標準答案比較大小，並且回應提示字串。</p>
-<p><L1>15週心得與程式範例:</p>
-<p><L1>14週心得與程式範例:</p>
+<p>W16 猜數字遊戲</p>
+
+<!-- 以下實際利用  Brython 畫圖 -->
+
+<script type="text/python3">
+from browser import document
+from browser import alert
+import random
+
+def two_input(ev):
+    ans = random.randint(1, 100)
+
+    a_in = int(input("輸入整數:"))
+    guess = 1
+
+    while ans != a_in:
+        if a_in < ans:
+            a_in = int(input("too small"))
+        else:
+            a_in = int(input("too big"))
+        guess += 1
+
+    alert("恭喜答對 ,一共猜了" + (str(guess)) + "次")
+
+document['ch02'].bind('click',two_input)
+
+</script>
+
+<p><button id="ch02">猜數字</button></p>
+
+<pre class="brush: python">
+
+<!-- 以下實際利用  Brython 畫圖 -->
+<script type="text/python3">
+from browser import document
+from browser import alert
+import random
+
+def two_input(ev):
+    ans = random.randint(1, 100)
+
+    a_in = int(input("輸入整數:"))
+    guess = 1
+
+    while ans != a_in:
+        if a_in < ans:
+            a_in = int(input("too small"))
+        else:
+            a_in = int(input("too big"))
+        guess += 1
+
+    alert("恭喜答對 ,一共猜了" + (str(guess)) + "次")
+
+document['ch02'].bind('click',two_input)
+
+</script>
+
+<p><button id="ch02">猜數字</button></p>
+
+</pre>
+
+<p><a href="https://vimeo.com/199505806">第16週影片</a></p>
+<p><L1>15週心得與程式範例:
+<!-- 導入 Brython 標準程式庫 --></p>
+<script type="text/javascript" 
+    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js">
+</script>
+
+<!-- 啟動 Brython -->
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<p>製作按鈕</p>
+
+<!-- 以下實際利用  Brython 畫圖 -->
+
+<script type="text/python3">
+from browser import document
+from browser import alert
+
+def get_input(ev):
+    the_input = input("請輸入")
+    alert("輸入為:"+str(the_input))
+
+document['ch01'].bind('click',get_input)
+
+</script>
+
+<p><button id="ch01">取輸入後, 列印出來</button></p>
+
+<pre class="brush: python">
+
+<!-- 以下實際利用  Brython 畫圖 -->
+<script type="text/python3">
+from browser import document
+from browser import alert
+
+def get_input(ev):
+    the_input = input("請輸入")
+    alert("輸入為:"+str(the_input))
+
+document['ch01'].bind('click',get_input)
+
+</script>
+
+<p><button id="ch01">取輸入後, 列印出來</button></p>
+
+</pre>
+
+<p><a href="https://vimeo.com/199506808">第15週影片</a></p>
+<p><L1>14週心得與程式範例:
+製作重複列印數字的程式，並加上想要列印的數字及需要列印次數。</p>
+<p><a href="https://vimeo.com/199505442">第14週影片</a></p>
             </div>
             <!-- /.entry-content -->
         </article>
@@ -353,11 +471,6 @@ init_mathjax();
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="./w16-1-lian-xi.html">
-                            W16-1 練習
-                        </a>
-                    </li>
-                    <li class="list-group-item">
                         <a href="./w15-lian-xi.html">
                             W15 練習
                         </a>
@@ -365,6 +478,11 @@ init_mathjax();
                     <li class="list-group-item">
                         <a href="./w14-lian-xi.html">
                             W14 練習
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="./w12-brython-hui-tu.html">
+                            W12 Brython 繪圖
                         </a>
                     </li>
                 </ul>
